@@ -4,3 +4,41 @@ body {
     line-height: 1.6;
     color: $color-grey-dark;
 }
+
+.heading__primary{
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;//prevent movement shaking
+    margin-bottom: 6rem;
+    width: 100%;
+    cursor: pointer;
+    
+    &--main{
+        font-family: 'Aclonica', sans-serif;
+        display: block;
+        font-size: 5rem;
+        font-weight: 500;
+        letter-spacing: 3.5rem;
+        text-shadow: 2px 2px 8px rgba(179, 96, 96, 0.746);
+        animation: moveInLeft 1s ease-out;
+        animation-fill-mode: backwards;
+        transition: all 0.5s ease-in;
+        &:hover{
+            transform: scale(1.1) translateY(-2rem);
+        }
+    }
+    &--sub{
+        font-family: 'Aclonica', sans-serif;
+        margin-top: 1rem;
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: 1.35rem;
+        text-shadow: 2px 2px 8px rgba(179, 96, 96, 0.746);
+        animation: moveInRight 1s ease-out;
+        transition: all 0.5s ease-in;
+        &:hover{
+            transform: scale(1.1) translateY(1rem);
+        }
+    }
+}
