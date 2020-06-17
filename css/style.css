@@ -34,7 +34,7 @@ body {
     text-shadow: 2px 2px 8px rgba(179, 96, 96, 0.746);
     animation: moveInLeft 1s ease-out;
     animation-fill-mode: backwards;
-    transition: all 0.5s ease-in; }
+    transition: all 0.2s ease-in; }
     .heading__primary--main:hover {
       transform: scale(1.1) translateY(-2rem); }
   .heading__primary--sub {
@@ -46,7 +46,7 @@ body {
     letter-spacing: 1.35rem;
     text-shadow: 2px 2px 8px rgba(179, 96, 96, 0.746);
     animation: moveInRight 1s ease-out;
-    transition: all 0.5s ease-in; }
+    transition: all 0.2s ease-in; }
     .heading__primary--sub:hover {
       transform: scale(1.1) translateY(1rem); }
 
@@ -138,7 +138,7 @@ body {
     z-index: -1;
     transition: all .4s; }
   .btn--animated {
-    animation: moveInBottom 1s ease-out 1s;
+    animation: moveInBottom 1s ease-out 0.5s;
     animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
@@ -179,7 +179,7 @@ body {
     animation: FadeIn 1s ease-out 0.5s;
     backface-visibility: none;
     animation-fill-mode: backwards;
-    transition: all 0.5s ease-in; }
+    transition: all 0.2s ease-in; }
     .header__logo:hover {
       transform: scale(1.1); }
   .header__text-box {
@@ -191,3 +191,43 @@ body {
     text-align: center;
     margin: auto;
     width: 80%; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 4rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  animation: FadeIn 1s ease-out 0.5s;
+  backface-visibility: none;
+  animation-fill-mode: backwards;
+  transition: all 0.2s ease-in; }
+  .navigation__button:hover {
+    transform: scale(1.1); }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
