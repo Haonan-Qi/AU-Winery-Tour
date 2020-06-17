@@ -1,0 +1,30 @@
+{
+  "name": "au-winery-tour",
+  "version": "1.0.0",
+  "description": "Landing Page for Australia winery tour marketing.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haonan-Qi/AU-Winery-Tour.git"
+  },
+  "keywords": [
+    "Austalia",
+    "winery",
+    "tour",
+    "Sass",
+    "71",
+    "Float"
+  ],
+  "author": "Steven Qi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Haonan-Qi/AU-Winery-Tour/issues"
+  },
+  "homepage": "https://github.com/Haonan-Qi/AU-Winery-Tour#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
