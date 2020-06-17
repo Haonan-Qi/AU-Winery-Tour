@@ -21,10 +21,7 @@ body {
         text-shadow: 2px 2px 8px rgba(179, 96, 96, 0.746);
         animation: moveInLeft $time-slow ease-out;
         animation-fill-mode: backwards;
-        transition: all $time-quick ease-in;
-        &:hover{
-            transform: scale(1.1) translateY(-2rem);
-        }
+        @include hover-move-up;
     }
     &--sub{
         font-family: 'Aclonica', sans-serif;
@@ -35,10 +32,7 @@ body {
         letter-spacing: 1.35rem;
         text-shadow: 2px 2px 8px rgba(179, 96, 96, 0.746);
         animation: moveInRight $time-slow ease-out;
-        transition: all $time-quick ease-in;
-        &:hover{
-            transform: scale(1.1) translateY(1rem);
-        }
+        @include hover-move-down;
     }
 }
 

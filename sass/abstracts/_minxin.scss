@@ -1,33 +1,50 @@
 @mixin border {
-    border:lightskyblue dashed 2px;
+  border: lightskyblue dashed 2px;
 }
 
 @mixin absCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@mixin scaleTransition {
-    transition: all 0.2s ease-in;
-    &:hover{
-            transform: scale(1.1);;
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 @mixin box-shadow-hover-after {
-    box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+  box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
 }
 
 @mixin box-shadow-hover-before {
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+}
+
+@mixin hover-move-up {
+  transition: all $time-quick ease-in;
+
+  &:hover {
+    transform: scale(1.1) translateY(-2rem);
+  }
+}
+
+@mixin hover-move-down {
+  transition: all $time-quick ease-in;
+
+  &:hover {
+    transform: scale(1.1) translateY(1rem);
+  }
+}
+
+@mixin scaleTransition {
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
