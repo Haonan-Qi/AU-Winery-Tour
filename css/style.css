@@ -106,11 +106,22 @@ body {
     font-size: 1.3rem;
     border: none;
     cursor: pointer; }
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s; }
   .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     .btn:hover::after {
-      transform: scaleX(1.2) scaleY(1.4);
+      transform: scaleX(1.1) scaleY(1.2);
       opacity: 0; }
   .btn:active, .btn:focus {
     outline: none;
@@ -126,17 +137,6 @@ body {
     color: #fff; }
     .btn--green::after {
       background-color: #55c57a; }
-  .btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s; }
   .btn--animated {
     animation: moveInBottom 1s ease-out 0.5s;
     animation-fill-mode: backwards; }
