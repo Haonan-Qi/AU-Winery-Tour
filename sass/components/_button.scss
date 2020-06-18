@@ -71,7 +71,7 @@
 }
 
 .btn-text {
-    &:link,
+    &:link,//which mean a have to have a ref
     &:visited {
         font-size: $default-font-size;
         color: $color-primary-light;
