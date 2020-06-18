@@ -67,6 +67,8 @@ body {
   cursor: pointer; }
   .heading__secondary:hover {
     transform: scale(1.1); }
+  .heading__secondary--light-mode {
+    background-image: linear-gradient(to right, #200505 60%, #f04d4d); }
 
 .heading-tertiary {
   font-size: 1.8rem;
@@ -472,3 +474,8 @@ body {
   margin-top: -12rem; }
   .section-features > * {
     transform: skewY(4deg); }
+
+.section-tours {
+  background-color: #eee;
+  padding: 20rem 0 15rem 0;
+  margin-top: -10rem; }
