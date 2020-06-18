@@ -256,15 +256,14 @@ body {
   .card--feature:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
-.card--story {
-  /* Note the position of prespective property-->parent element */
-  perspective: 500rem;
+.card--tour {
   /* Note how this work , Nice New Property*/
+  perspective: 500rem;
   -moz-perspective: 500rem;
   /* Note how this work , Nice New Property*/
   position: relative;
   height: 52rem; }
-  .card--story__side {
+  .card--tour__side {
     height: 52rem;
     transition: all .8s ease-in-out;
     position: absolute;
@@ -278,21 +277,21 @@ body {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-    .card--story__side--front {
+    .card--tour__side--front {
       background-color: #fff; }
-    .card--story__side--back {
+    .card--tour__side--back {
       transform: rotateY(180deg); }
-      .card--story__side--back-1 {
+      .card--tour__side--back-1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-      .card--story__side--back-2 {
+      .card--tour__side--back-2 {
         background-image: linear-gradient(to right bottom, #471e1e, #c7bdba); }
-      .card--story__side--back-3 {
+      .card--tour__side--back-3 {
         background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
-  .card--story:hover .card--story__side--front {
+  .card--tour:hover .card--tour__side--front {
     transform: rotateY(-180deg); }
-  .card--story:hover .card--story__side--back {
+  .card--tour:hover .card--tour__side--back {
     transform: rotateY(0); }
-  .card--story__picture {
+  .card--tour__picture {
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
@@ -300,13 +299,13 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     /* vender prefix should come first */
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
-    .card--story__picture--1 {
+    .card--tour__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../img/Background_img_story_card_1.jpg); }
-    .card--story__picture--2 {
+    .card--tour__picture--2 {
       background-image: linear-gradient(to right bottom, #471e1e, #c7bdba), url(../../img/Background_img_story_card_2.jpg); }
-    .card--story__picture--3 {
+    .card--tour__picture--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/Background_img_story_card_3.jpg); }
-  .card--story__heading {
+  .card--tour__heading {
     font-size: 2.8rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -316,44 +315,44 @@ body {
     top: 12rem;
     right: 2rem;
     width: 75%; }
-  .card--story__heading-span {
+  .card--tour__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     /* Note what this for */ }
-    .card--story__heading-span--1 {
+    .card--tour__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
-    .card--story__heading-span--2 {
+    .card--tour__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(71, 30, 30, 0.85), rgba(199, 189, 186, 0.85)); }
-    .card--story__heading-span--3 {
+    .card--tour__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
-  .card--story__details {
+  .card--tour__details {
     padding: 3rem; }
-    .card--story__details ul {
+    .card--tour__details ul {
       list-style: none;
       width: 80%;
       margin: 0 auto; }
-      .card--story__details ul li {
+      .card--tour__details ul li {
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem; }
-        .card--story__details ul li:not(:last-child) {
+        .card--tour__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
-  .card--story__cta {
+  .card--tour__cta {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center; }
-  .card--story__price-box {
+  .card--tour__price-box {
     text-align: center;
     color: #fff;
     margin-bottom: 8rem; }
-  .card--story__price-only {
+  .card--tour__price-only {
     font-size: 1.4rem;
     text-transform: uppercase; }
-  .card--story__price-value {
+  .card--tour__price-value {
     font-size: 6rem;
     font-weight: 100; }
 
