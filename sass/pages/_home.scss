@@ -11,12 +11,13 @@
 }
 
 .section-features {
-    padding: 20rem 0 15rem 0;
-    @include background-img("../../img/Background_img_feature.jpg");
+    padding: 16rem 0;
+    @include backgroundImg-section("../../img/Background_img_feature.jpg");
     background-size: cover;
-    transform: skewY(-5deg);
-    margin-top: -10rem;
+    transform: skewY(-4deg);
+    margin-top: -12rem;
     &>* {
-        transform: skewY(5deg);
+        transform: skewY(4deg);
     }
 }
+

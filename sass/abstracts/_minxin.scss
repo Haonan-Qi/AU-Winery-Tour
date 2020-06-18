@@ -49,9 +49,24 @@
   }
 }
 
-@mixin background-img($url) {
+@mixin backgroundImg-section($url) {
   background-image: linear-gradient(to right bottom,
-            rgba($color-primary-light, 0.8),
-            rgba($color-primary-dark, 0.8)),
-        url($url);
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)),
+    url($url);
+}
+
+@mixin backgroundImg-card-primary($url) {
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+    url($url);
+}
+
+@mixin backgroundImg-card-secondary-2($url) {
+  background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+    url($url);
+}
+
+@mixin backgroundImg-card-tertiary-3($url) {
+  background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+    url($url);
 }

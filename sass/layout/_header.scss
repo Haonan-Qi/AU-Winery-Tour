@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 95vh;
-    @include background-img("../../img/Background_img_header.jpg");
+    @include backgroundImg-section("../../img/Background_img_header.jpg");
     background-position: center;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
