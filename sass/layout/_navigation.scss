@@ -15,7 +15,7 @@
         text-align: center;
         cursor: pointer;
         animation: FadeIn $time-slow ease-out 0.5s;
-        backface-visibility: none;
+        @include bv-hidden;
         animation-fill-mode: backwards;
         @include scaleTransition;
     }

@@ -24,14 +24,12 @@
     }
 
     &--tour {
-
         /* Note how this work , Nice New Property*/
         perspective: 500rem; //Note the position of prespective property-->parent element
         -moz-perspective: 500rem;
         /* Note how this work , Nice New Property*/
         position: relative;
         height: 52rem;
-
         &__side {
             height: 52rem;
             transition: all .8s ease-in-out;
@@ -39,9 +37,8 @@
             top: 0;
             left: 0;
             width: 100%;
-            -webkit-backface-visibility: hidden;
             /* Note this property */
-            backface-visibility: hidden;
+            @include bv-hidden;
             /* Note this property */
             border-radius: 20px;
             overflow: hidden;
@@ -63,7 +60,8 @@
                 }
 
                 &-3 {
-                    background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+                    background-color:red;
+                    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
                 }
             }
         }
@@ -99,7 +97,7 @@
 
             &--3 {
                 background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
-                    url(../../img/Background_img_story_card_3.jpg);
+                    url(../../img/Background_img_story_card_3.jpg) !important;
             }
         }
 

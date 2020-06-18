@@ -23,6 +23,7 @@ body {
 .heading__primary {
   color: #fff;
   text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   margin-bottom: 6rem;
   width: 100%;
@@ -270,8 +271,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    -webkit-backface-visibility: hidden;
     /* Note this property */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     /* Note this property */
     border-radius: 20px;
@@ -286,7 +287,8 @@ body {
       .card--tour__side--back-2 {
         background-image: linear-gradient(to right bottom, #471e1e, #c7bdba); }
       .card--tour__side--back-3 {
-        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+        background-color: red;
+        background-image: linear-gradient(to right bottom, #471e1e, #c7bdba); }
   .card--tour:hover .card--tour__side--front {
     transform: rotateY(-180deg); }
   .card--tour:hover .card--tour__side--back {
@@ -304,7 +306,7 @@ body {
     .card--tour__picture--2 {
       background-image: linear-gradient(to right bottom, #471e1e, #c7bdba), url(../../img/Background_img_story_card_2.jpg); }
     .card--tour__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/Background_img_story_card_3.jpg); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/Background_img_story_card_3.jpg) !important; }
   .card--tour__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -443,7 +445,8 @@ body {
     width: 100%;
     height: 100%;
     animation: FadeIn 1s ease-out 0.5s;
-    backface-visibility: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     animation-fill-mode: backwards;
     transition: all 0.2s ease-in; }
     .header__logo:hover {
@@ -474,7 +477,8 @@ body {
   text-align: center;
   cursor: pointer;
   animation: FadeIn 1s ease-out 0.5s;
-  backface-visibility: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   animation-fill-mode: backwards;
   transition: all 0.2s ease-in; }
   .navigation__button:hover {

@@ -8,7 +8,7 @@ body {
 .heading__primary{
     color: $color-white;
     text-transform: uppercase;
-    backface-visibility: hidden;//prevent movement shaking
+    @include bv-hidden;
     margin-bottom: 6rem;
     width: 100%;
     cursor: pointer;
