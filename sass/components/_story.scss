@@ -8,7 +8,6 @@
     padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
-
     &__shape {
         width: 15rem;
         height: 15rem;
@@ -21,18 +20,15 @@
         position: relative;
         @include clearfix;
     }
-
     &__img {
         height: 100%;
         transform: translateX(-4rem) scale(1.4);
         backface-visibility: hidden;
         transition: all .5s;
     }
-
     &__text {
         transform: skewX(12deg);
     }
-
     &__caption {
         position: absolute;
         top: 50%;
@@ -46,12 +42,10 @@
         transition: all .5s;
         backface-visibility: hidden;
     }
-
     &:hover &__caption {
         opacity: 1;
         transform: translate(-50%, -50%);
     }
-
     &:hover &__img {
         transform: translateX(-4rem) scale(1);
         filter: blur(3px) brightness(80%);

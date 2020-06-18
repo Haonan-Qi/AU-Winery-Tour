@@ -22,12 +22,35 @@
 }
 
 .section-tours {
-    background-color: $color-grey-light-2;
-    padding: 20rem 0 10rem 0;
+    padding: 20rem 0 4rem 0;
     margin-top: -10rem;
 }
 
 .section-stories {
-    padding: 10rem 0;
+    padding: 10rem 0 4rem 0;
     position: relative;
+}
+
+.section-book {
+    padding: 15rem 0;
+    opacity: 0.8;
+    background-image: linear-gradient(to top, rgb(121, 78, 78) 40%, rgba(255, 255, 255, 0.671));
+}
+
+.book {
+    background-image: linear-gradient(105deg, 
+                                    rgba($color-white, 0.9) 0%,
+                                    rgba($color-white, 0.9) 50%,
+                                    transparent 30%) ,
+                            url(../../img/Background_img_book_form.jpg);
+    background-size: 100%;
+    border-radius: 3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    height: 50rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
 }
