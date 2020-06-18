@@ -70,3 +70,15 @@
   background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
     url($url);
 }
+
+@mixin popup-fadeIn-bg-before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+@mixin popup-fadeIn-ft-before {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(.25);
+  transition: all .5s .2s;
+}

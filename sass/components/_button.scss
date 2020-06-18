@@ -3,7 +3,6 @@
     font-family: 'Aclonica', sans-serif;
     text-shadow: 2px 2px 8px rgba(179, 96, 96, 0.746);
     color: red;
-    z-index: 20000;
     &,
     &:link,
     &:visited {
@@ -79,7 +78,7 @@
         display: inline-block;
         text-decoration: none;
         border-bottom: 1px solid $color-primary-light;
-        padding: 0.3rem;
+        padding: 0.5rem;
         transition: all .4s;
     }
 
