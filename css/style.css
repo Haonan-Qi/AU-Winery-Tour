@@ -231,7 +231,7 @@ body {
       top: 10rem; }
     .photo-composition__photo:hover {
       outline: 0.7rem solid #c7bdba;
-      transform: scale(1.05) translateY(-0.5rem);
+      transform: scale(1.2) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20;
       outline-offset: 2rem; }
@@ -287,7 +287,7 @@ body {
         background-image: linear-gradient(to right bottom, #471e1e, #c7bdba); }
       .card--tour__side--back-3 {
         background-color: red;
-        background-image: linear-gradient(to right bottom, #471e1e, #c7bdba); }
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
   .card--tour:hover .card--tour__side--front {
     transform: rotateY(-180deg); }
   .card--tour:hover .card--tour__side--back {

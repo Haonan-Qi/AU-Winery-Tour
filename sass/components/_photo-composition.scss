@@ -27,11 +27,10 @@
 
         &:hover {
             outline: 0.7rem solid $color-primary-dark; //outline is outside of any border
-            transform: scale(1.05) translateY(-.5rem);
+            transform: scale(1.2) translateY(-.5rem);
             @include box-shadow-hover-after;
             z-index: 20;
             outline-offset: 2rem;
-
         }
 
     }
